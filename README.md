@@ -2,7 +2,7 @@
 
 Did you know that you can use your Raspberry Pi to _get eyes in the sky_? By tuning into radio signals emitted from planes up to 250 miles away from your location you can track flights and it only takes a few minutes and a cheap USB TV stick to get started.
 
-![Lead image of RPi and dongle](/content/images/2017/07/IMG_1424_1080.jpg) _Pictured: dump1090 - testing FlightAware Antenna vs a quarter-wave whip and Cantenna_
+![Lead image of RPi and dongle](https://blog.alexellis.io/content/images/2017/07/IMG_1424_1080.jpg) _Pictured: dump1090 - testing FlightAware Antenna vs a quarter-wave whip and Cantenna_
 
 This guide will give you a brief introduction into _flight tracking_ - looking at the software, hardware and most importantly the terminology and jargon you need to know. I'll also show you how **[Docker](http://blog.alexellis.io/tag/docker/) and containers** make a great combination for managing your software in IoT projects.
 
@@ -10,7 +10,7 @@ Sites like [FlightAware.com](http://flightaware.com/about/) have been able to tr
 
 > You can keep the signals you pick up to yourself or contribute them to a real-time tracking site like [FlightAware.com](http://flightaware.com/about/), [FlightRadar24](https://www.flightradar24.com) and [PlaneFinder.net](Planefinder.net) - in return you get detailed metrics - RADAR readouts and other rewards.
 
-![FlightRadar](/content/images/2017/07/fr-sample.jpg)
+![FlightRadar](https://blog.alexellis.io/content/images/2017/07/fr-sample.jpg)
 
 _Pictured: FlightRadar showing planes over UK airspace_
 
@@ -71,7 +71,7 @@ SMA ([SubMiniature version A](https://en.wikipedia.org/wiki/SMA_connector)) conn
 
 *   dump1090
 
-![](/content/images/2017/07/1090.jpg)
+![](https://blog.alexellis.io/content/images/2017/07/1090.jpg)
 
 A core component of decoding ADS-B signals is the 1090 software component - _1090_ refers to the frequency we're dealing with and _dump_ is the job it performs - decoding and dumping out raw data.
 
@@ -100,9 +100,7 @@ FlightAware is one of several websites that will aggregate data picked up from y
 
 Here are the results from my account on the FlightAware page using their dedicated antenna and noise reducing DVB-T.
 
-![](/content/images/2017/07/Screen-Shot-2017-07-16-at-19.12.08.png)
-
-You can view my [profile (alexellisuk) here](http://flightaware.com/adsb/stats/user/alexellisuk) for an example of more of the statistics available.
+![](https://blog.alexellis.io/content/images/2017/07/Screen-Shot-2017-07-16-at-19.12.08.png)
 
 *   MLAT
 
@@ -134,7 +132,7 @@ Now reboot
 
 #### The decoder - dump1090
 
-![](/content/images/2017/07/pim_zero.jpg)
+![](https://blog.alexellis.io/content/images/2017/07/pim_zero.jpg)
 
 _Pictured: testing Pimoroni's DVB-T - connected to a Pi Zero and left at a relative's house._
 
@@ -168,7 +166,7 @@ The `docker run` command is responsible for starting our code. You can use `dock
 
 _Log sample:_
 
-![](/content/images/2017/07/sample-log.png)
+![](https://blog.alexellis.io/content/images/2017/07/sample-log.png)
 
 If you know the IP address of your Raspberry Pi - you can now open up the built-in webpage i.e. [http://192.168.0.10:8080/](http://192.168.0.10:8080/)
 
@@ -250,38 +248,6 @@ You can find a complete SD Card image from FlightAware, but if you build a syste
 
 Keep an eye out for a follow-up blog post looking at the results I was able to achieve with various antenna and tuners.
 
-![](/content/images/2017/07/antenna_type.jpg)
+![](https://blog.alexellis.io/content/images/2017/07/antenna_type.jpg)
 
 _Pictured: antennas on test - cantenna, FlightAware, 2x 1090 MHz_
-
-> If you have questions or would like to get in touch you can follow me on [Twitter @alexellisuk](https://twitter.com/alexellisuk) or send in comments below.
-
-### See also
-
-You may also like these blogs and guides for cool projects with the Raspberry Pi and [Docker](http://blog.alexellis.io/tag/docker/).
-
-*   [Create a hardened Raspberry Pi NAS](https://blog.alexellis.io/hardened-raspberry-pi-nas/)
-
-*   [Deep Dive - Docker Swarm Clustering on the Pi](https://blog.alexellis.io/live-deep-dive-pi-swarm/)
-
-*   [Ship Serverless FaaS functions with ease](https://blog.alexellis.io/build-and-deploy-with-faas/)
-
-#### [Alex Ellis](/author/alex/)
-
-Read [more posts](/author/alex/) by this author.
-
-<div class="author-meta"><span class="author-location icon-location">United Kingdom</span> <span class="author-link icon-link">[http://alexellis.io/](http://alexellis.io/)</span></div>
-
-#### Share this post
-
-[<span class="hidden">Twitter</span>](https://twitter.com/intent/tweet?text=Get%20eyes%20in%20the%20sky%20with%20your%20Raspberry%20Pi&url=http://blog.alexellis.io/track-flights-with-rpi/) [<span class="hidden">Facebook</span>](https://www.facebook.com/sharer/sharer.php?u=http://blog.alexellis.io/track-flights-with-rpi/) [<span class="hidden">Google+</span>](https://plus.google.com/share?url=http://blog.alexellis.io/track-flights-with-rpi/)</section>
-
-<section class="gh-subscribe">
-
-### Subscribe to alex ellis' blog
-
-Get the latest posts delivered right to your inbox.
-
-## Serverless at Fusion meetup in Birmingham, UK
-
-I headed to the West Midlands in the UK for my first visit to the Fusion meet-up group. I…
